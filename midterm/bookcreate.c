@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
+	printf("--bookquery--\n");
+
 	printf("%-2s %-9s %-8s %-4s %-11s %-6s\n","id", "bookName", "author", "year", "numofborrow", "borrow");
 	while (scanf("%d %s %s %d %d %d", &recode.id, &recode.bookName, &recode.author, &recode.year, &recode.numofborrow, &recode.borrow) == 6) {
 		lseek(fd, (recode.id - START_ID)* sizeof(recode), SEEK_SET);

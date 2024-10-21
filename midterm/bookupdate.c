@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	char c;
 	struct book record;
 
-	printf("--bookupdate--");
+	printf("--bookupdate--\n");
 
 	if (argc < 2) {
 		fprintf(stderr, "How to use : %s file\n", argv[0]);
